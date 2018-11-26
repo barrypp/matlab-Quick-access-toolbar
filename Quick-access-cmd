@@ -1,4 +1,4 @@
-%% DarkTheme
+%% DarkTheme Switch
 color = com.mathworks.services.Prefs.getColorPref('ColorsBackground');
 color = rgb2hsv([color.getRed()/255,color.getGreen()/255,color.getBlue()/255]);
 IsDark = color(3) < 0.5;
