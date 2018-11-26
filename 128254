@@ -1,0 +1,20 @@
+%% DarkTheme
+color = com.mathworks.services.Prefs.getColorPref('ColorsBackground');
+color = rgb2hsv([color.getRed()/255,color.getGreen()/255,color.getBlue()/255]);
+IsDark = color(3) < 0.5;
+
+oldpath = pwd;
+cd('F:\ZZX\W\1-Script\matlab-schemer\scottclowe-matlab-schemer-2156bb9');
+if IsDark
+    schemer_import('schemes/default.prf');
+else
+    schemer_import('schemes/VS2017-Dark.prf');
+end
+cd(oldpath)
+
+%% ClearAll
+instrreset;
+fclose all;
+close all;
+clear;
+clc;
