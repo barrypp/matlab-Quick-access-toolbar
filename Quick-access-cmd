@@ -4,7 +4,7 @@ color = rgb2hsv([color.getRed()/255,color.getGreen()/255,color.getBlue()/255]);
 IsDark = color(3) < 0.5;
 
 oldpath = pwd;
-cd('F:\ZZX\W\1-Script\matlab-schemer\scottclowe-matlab-schemer-2156bb9');
+cd(fullfile(userpath,'matlab-schemer'));
 if IsDark
     schemer_import('schemes/default.prf');
 else
